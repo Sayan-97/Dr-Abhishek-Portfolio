@@ -20,12 +20,12 @@ body {
     z-index: -1;
 }
 
-h1{
+h1 {
     font-size: 2.5em;
     font-weight: 600;
 }
 
-p{
+p {
     font-size: 1.25em;
     font-weight: 400;
 }
@@ -132,15 +132,29 @@ header {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+    position: relative;
 }
 
-.header__left h1{
+.header__left-grad {
+    position: absolute;
+
+    width: 114px;
+    height: 362px;
+
+    left: -7.5%;
+    top: -5%;
+
+    background: linear-gradient(180deg, rgba(73, 154, 250, 0.114) 0%, rgba(243, 245, 248, 0.066) 100%);
+    border-radius: 108px 108px 0px 0px;
+}
+
+.header__left h1 {
     width: 100%;
     font-family: 'Lora', serif;
     /* font-size: 2.75em; */
 }
 
-.header__left span{
+.header__left span {
     font-size: 1.5em;
     font-weight: 500;
     color: #838383;
@@ -152,13 +166,26 @@ header {
     gap: 20px;
 }
 
-.header__left-contact button{
+.header__left-contact button {
     font-size: 16px;
     font-weight: 600;
 }
 
-.header__right{
+.header__right {
+    position: relative;
     width: 40%;
+    z-index: 9;
+}
+
+.header__right-grad {
+    position: absolute;
+    width: 141px;
+    height: 141px;
+    background: #DDECFD;
+    border-radius: 50%;
+    right: 5%;
+    top: 13%;
+    z-index: 1;
 }
 
 @media screen and (max-width: 430px) {
@@ -167,21 +194,21 @@ header {
     }
 
     button {
-        padding: 10px 25px;
+        padding: 8px 20px;
     }
 
     h1,
     p,
     a,
-    span{
+    span {
         text-align: center;
     }
 
-    h1{
+    h1 {
         font-size: 2em;
     }
 
-    p{
+    p {
         font-size: 1em;
     }
 
@@ -199,22 +226,29 @@ header {
     }
 
     /* HEADER CONTAINER */
-    .header__container{
+    .header__container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .header__left{
+    .header__left {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
 
-        .header__left span{
-            font-size: 1.1em;
-        }
+    .header__left span {
+        font-size: 1.1em;
+    }
 
-    .header__right{
-        width: 100%;
+    .header__right {
+        width: 85%;
+    }
+
+    .header__right-grad{
+        top: 51%;
+        right: 2%;
     }
 }
