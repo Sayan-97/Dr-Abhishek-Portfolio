@@ -306,8 +306,9 @@ main {
     }
 
     .header__right-grad {
-        top: 51%;
+        top: 460px;
         right: 2%;
+        z-index: 1;
     }
 
     /* ===== MAIN ===== */
