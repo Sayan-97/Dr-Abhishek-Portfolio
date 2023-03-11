@@ -50,6 +50,12 @@ button {
     align-items: center;
 }
 
+section {
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+
 
 /* ===== HEADER ===== */
 
@@ -241,6 +247,42 @@ main {
     color: #2E279D;
 }
 
+/* specialization */
+
+.specialization__grad {
+    width: 100%;
+    height: 472px;
+    position: absolute;
+    z-index: -1;
+}
+
+.specialization__container h1 {
+    text-align: center;
+}
+
+.specialization__content {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.orthopedics,
+.pediatric{
+    display: flex;
+    flex-direction: column;
+}
+
+.orthopedics p,
+.pediatric p{
+    text-align: center;
+    background: #EFF6FE;
+    padding: 20px 10px;
+    border-radius: 0 0 16px 16px;
+}
+
+
 
 @media screen and (max-width: 430px) {
     .container {
@@ -319,11 +361,26 @@ main {
         flex-direction: column;
     }
 
-    .about-left div img{
+    .about-left div img {
         width: 90%;
     }
 
-    .about-right p{
+    .about-right p {
         text-align: start;
+    }
+
+    /* specialization */
+
+    .specialization__content {
+        flex-direction: column;
+    }
+
+    .orthopedics img,
+    .pediatric img{
+        width: 292.35px;
+    }
+
+    .orthopedics p{
+        background: #fff;
     }
 }
