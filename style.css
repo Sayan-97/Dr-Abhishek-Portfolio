@@ -21,6 +21,7 @@ body {
 }
 
 h1 {
+    font-family: 'Lora', serif;
     font-size: 2.5em;
     font-weight: 600;
 }
@@ -150,7 +151,7 @@ header {
 
 .header__left h1 {
     width: 100%;
-    font-family: 'Lora', serif;
+
     /* font-size: 2.75em; */
 }
 
@@ -187,6 +188,59 @@ header {
     top: 13%;
     z-index: 1;
 }
+
+/* ===== MAIN ===== */
+main {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT */
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-left {
+    display: flex;
+    gap: 20px;
+}
+
+.about-left div:nth-child(1) {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-left div:nth-child(2) {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-right span {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2E279D;
+}
+
 
 @media screen and (max-width: 430px) {
     .container {
@@ -243,12 +297,31 @@ header {
         font-size: 1.1em;
     }
 
+    .header__left-grad {
+        display: none;
+    }
+
     .header__right {
         width: 85%;
     }
 
-    .header__right-grad{
+    .header__right-grad {
         top: 51%;
         right: 2%;
+    }
+
+    /* ===== MAIN ===== */
+
+    /* ABOUT */
+    .about__container {
+        flex-direction: column;
+    }
+
+    .about-left div img{
+        width: 90%;
+    }
+
+    .about-right p{
+        text-align: start;
     }
 }
