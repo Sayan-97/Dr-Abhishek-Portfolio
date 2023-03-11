@@ -284,6 +284,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 70px;
     }
 
     .header__left {
@@ -306,7 +307,7 @@ main {
     }
 
     .header__right-grad {
-        top: 460px;
+        top: 480px;
         right: 2%;
         z-index: 1;
     }
