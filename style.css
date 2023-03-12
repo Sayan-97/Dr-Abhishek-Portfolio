@@ -358,16 +358,16 @@ main {
 }
 
 /* AWARDS */
-.awards{
+.awards {
     display: flex;
     gap: 80px;
 }
 
-.awards img{
+.awards img {
     width: 50%;
 }
 
-.awards__details{
+.awards__details {
     width: 50%;
 
     display: flex;
@@ -375,16 +375,50 @@ main {
     gap: 20px;
 }
 
-.awards__details ul{
+.awards__details ul {
     margin-left: 40px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.awards__details ul li{
+.awards__details ul li {
     list-style: disc;
-    
+
+}
+
+/* CLINICS */
+.clinics {
+    background: #EFF6FE;
+}
+
+.clinics h1 {
+    text-align: center;
+}
+
+.clinics__container {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.clinics__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 20px;
+
+    width: 389px;
+    height: 331px;
+    border-radius: 6px;
+}
+
+.clinics__content p {
+    text-align: center;
 }
 
 /* ===== MEDIA QUERIES ===== */
@@ -458,6 +492,11 @@ main {
         z-index: 1;
     }
 
+    .header__left-contact{
+        flex-direction: column;
+        z-index: 9;
+    }
+
     /* ===== MAIN ===== */
 
     /* ABOUT */
@@ -506,26 +545,40 @@ main {
         align-items: center;
     }
 
-    .experience img{
+    .experience img {
         width: 80%;
     }
 
-    .exp__details h1{
+    .exp__details h1 {
         text-align: start;
     }
 
-        /* AWARDS */
-        .awards{
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-        }
+    /* AWARDS */
+    .awards {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 
-        .awards img{
-            width: 80%;
-        }
+    .awards img {
+        width: 80%;
+    }
 
-        .awards__details{
-            width: 100%;
-        }
+    .awards__details {
+        width: 100%;
+    }
+
+    /* CLINICS */
+
+    .clinics h1 {
+        text-align: center;
+    }
+
+    .clinics__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .clinics__content {
+        width: 100%;
+    }
 }
