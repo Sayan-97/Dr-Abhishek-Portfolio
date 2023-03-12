@@ -329,7 +329,7 @@ main {
     right: 0;
     text-align: center;
     margin: 0;
-
+    padding-bottom: 5px;
 }
 
 /* EXPERIENCE */
@@ -537,7 +537,7 @@ main {
     }
 
     .aoi__card-grad p {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     /* EXPERIENCE */
