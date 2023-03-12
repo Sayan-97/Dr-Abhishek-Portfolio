@@ -427,7 +427,8 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    justify-items: center;
+    /* align-items: center; */
 
     align-items: center;
     gap: 40px;
