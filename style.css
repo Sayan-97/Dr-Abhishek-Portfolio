@@ -427,10 +427,9 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    /* align-items: center; */
-
     align-items: center;
+    justify-items: center;
+
     gap: 40px;
 }
 
@@ -730,6 +729,10 @@ footer {
     }
 
     /* specialization */
+
+    .specialization__grad{
+        height: 700px;
+    }
 
     .specialization__content {
         flex-direction: column;
