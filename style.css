@@ -269,19 +269,66 @@ main {
 }
 
 .orthopedics,
-.pediatric{
+.pediatric {
     display: flex;
     flex-direction: column;
 }
 
 .orthopedics p,
-.pediatric p{
+.pediatric p {
     text-align: center;
     background: #EFF6FE;
     padding: 20px 10px;
     border-radius: 0 0 16px 16px;
 }
 
+/* AOI */
+
+.aoi__container h1 {
+    text-align: center;
+}
+
+.aoi__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.aoi__card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aoi__card img {
+    width: 100%;
+}
+
+.aoi__card-grad {
+    position: absolute;
+    /* width: 100%; */
+    background: linear-gradient(180deg, rgba(239, 246, 254, 0) 52.05%, rgba(239, 246, 254, 0.97) 93.25%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 10px;
+
+    /* display: flex; 
+    align-items: flex-end; */
+}
+
+.aoi__card-grad p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+    
+}
 
 
 @media screen and (max-width: 430px) {
@@ -376,11 +423,21 @@ main {
     }
 
     .orthopedics img,
-    .pediatric img{
+    .pediatric img {
         width: 292.35px;
     }
 
-    .orthopedics p{
+    .orthopedics p {
         background: #fff;
     }
+
+    /* AOI */
+
+    .aoi__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+        .aoi__card-grad p{
+            font-size: 13px;
+        }
 }
