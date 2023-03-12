@@ -320,17 +320,44 @@ main {
     align-items: flex-end; */
 }
 
-.aoi__card-grad p{
+.aoi__card-grad p {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
     margin: 0;
-    
+
 }
 
+/* EXPERIENCE */
+.experience {
+    display: flex;
+    gap: 80px;
+}
 
+.experience img {
+    width: 40%;
+}
+
+.exp__details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.exp__details ul {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.exp__details ul li {
+    list-style: disc;
+}
+
+/* ===== MEDIA QUERIES ===== */
 @media screen and (max-width: 430px) {
     .container {
         padding: 1% 4%;
@@ -433,11 +460,27 @@ main {
 
     /* AOI */
 
-    .aoi__content{
+    .aoi__content {
         grid-template-columns: repeat(2, 1fr);
     }
 
-        .aoi__card-grad p{
-            font-size: 13px;
-        }
+    .aoi__card-grad p {
+        font-size: 13px;
+    }
+
+    /* EXPERIENCE */
+
+    .experience {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience img{
+        width: 80%;
+    }
+
+    .exp__details h1{
+        text-align: start;
+    }
 }
