@@ -97,6 +97,7 @@ header {
     justify-content: space-between;
     align-items: center;
     /* padding: 20px; */
+    z-index: 10;
 }
 
 .navbar img {
@@ -193,6 +194,7 @@ header {
     align-items: flex-start;
     gap: 20px;
     position: relative;
+    z-index: 9;
 }
 
 .header__left-grad {
@@ -568,16 +570,16 @@ footer {
     padding: 5px 10px;
 }
 
-@media screen and (max-width: 920px) {
+/* @media screen and (max-width: 920px) {
 
     .about-left div:nth-child(1) img,
     .about-left div:nth-child(2) img {
         width: 200px;
     }
-}
+} */
 
 /* ===== MEDIA QUERIES (850px) ===== */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 920px) {
     h1 {
         font-size: 25px;
     }
@@ -693,7 +695,7 @@ footer {
 
 
 /* ===== MEDIA QUERIES (430px) ===== */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .container {
         padding: 1% 4%;
     }
