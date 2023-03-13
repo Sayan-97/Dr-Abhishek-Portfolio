@@ -55,10 +55,12 @@ button {
     color: #fff;
     font-size: 18px;
     font-weight: 600;
+
+    cursor: pointer;
 }
 
 .nav__btn {
-    width: 177px;
+    width: 240px;
     height: 57px;
 }
 
@@ -522,6 +524,14 @@ footer {
     padding: 5px 10px;
 }
 
+@media screen and (max-width: 920px) {
+
+    .about-left div:nth-child(1) img,
+    .about-left div:nth-child(2) img {
+        width: 200px;
+    }
+}
+
 /* ===== MEDIA QUERIES (850px) ===== */
 @media screen and (max-width: 850px) {
     h1 {
@@ -533,10 +543,10 @@ footer {
     }
 
     .nav__btn {
-        width: 150px;
+        width: 180px;
         height: 44.87px;
 
-        font-size: 16px;
+        font-size: 12px;
     }
 
     button {
@@ -612,21 +622,21 @@ footer {
     }
 
     /* Footer */
-    .footer__left img{
+    .footer__left img {
         width: 200px;
     }
 
-    .footer__left p{
+    .footer__left p {
         font-size: 14px;
     }
 
-    .footer__right ul a{
+    .footer__right ul a {
         font-size: 16px;
     }
 
-        .footer__btns{
-            gap: 5px;
-        }
+    .footer__btns {
+        gap: 5px;
+    }
 
     .footer__btns button {
         width: 160px;
@@ -646,6 +656,12 @@ footer {
         width: 150px;
         padding: 5px 10px;
         font-size: 12px;
+    }
+
+    .nav__btn{
+        font-size: 12px;
+
+        width: 140px;
     }
 
     h1,
@@ -730,7 +746,7 @@ footer {
 
     /* specialization */
 
-    .specialization__grad{
+    .specialization__grad {
         height: 700px;
     }
 
@@ -803,18 +819,18 @@ footer {
     }
 
     /* FOOTER */
-    .footer{
+    .footer {
         flex-direction: column;
         gap: 50px;
     }
 
-    .footer__left{
+    .footer__left {
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
 
-    .footer__right{
+    .footer__right {
         justify-content: center;
         align-items: center;
         gap: 10px;
