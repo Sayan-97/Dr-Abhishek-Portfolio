@@ -498,11 +498,9 @@ main {
     margin-top: 100px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-content: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-
-    justify-items: center;
     align-items: center;
     gap: 40px;
 }
@@ -516,8 +514,7 @@ main {
     background: #fff;
     padding: 20px 20px;
 
-    width: 100%;
-    height: 100%;
+    width: 32%;
     border-radius: 6px;
 }
 
@@ -991,8 +988,8 @@ footer {
         text-align: center;
     }
 
-    .clinics__container {
-        grid-template-columns: repeat(1, 1fr);
+    .clinics__container div {
+        flex-direction: column;
     }
 
     .clinics__content {
