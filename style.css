@@ -608,6 +608,11 @@ main {
     cursor: pointer;
 }
 
+.gallery__content img,
+.gallery__content video{
+    border-radius: 10px;
+}
+
 .gallery__content p{
     font-weight: 600;
 }
