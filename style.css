@@ -609,11 +609,11 @@ main {
 }
 
 .gallery__content img,
-.gallery__content video{
+.gallery__content video {
     border-radius: 10px;
 }
 
-.gallery__content p{
+.gallery__content p {
     font-weight: 600;
 }
 
@@ -622,6 +622,12 @@ main {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.joint-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 /* FOOTER */
@@ -1064,5 +1070,11 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 10px;
+    }
+
+    .joint-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
