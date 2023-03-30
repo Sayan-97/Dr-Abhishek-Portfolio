@@ -132,7 +132,7 @@
                             </p>
                             <p class="ed">
                                 <span>Education: </span>MBBS(gold medallist), DNB, MNAMS,
-                                paediatric orthopaedics fellowship, IOA JMF
+                                paediatric orthopaedics fellowship, IOA JMRF
                             </p>
                             <a href="#clinics"><button><i class="uil uil-directions"></i>Get Directions</button></a>
                         </div>
@@ -403,27 +403,33 @@
                     </div>
                 </section>
 
-                <section>
+                <section id="gallery">
                     <div class="gallery container">
                         <h1>Gallery</h1>
                         <div class="gallery__container">
-                            <div class="gallery__content">
-                                <img src="./assets/galley1.png" alt="img">
+                            <div id="jointGal" class="gallery__content">
+                                <img src="./assets/gallery1.png" alt="img">
+                                <p>Joint Replacement</p>
                             </div>
-                            <div class="gallery__content">
-                                <img src="./assets/galley2.png" alt="img">
+                            <div id="footGal" class="gallery__content">
+                                <img src="./assets/gallery2.png" alt="img">
+                                <p>Foot and Ankle</p>
                             </div>
-                            <div class="gallery__content">
-                                <img src="./assets/galley3.png" alt="img">
+                            <div id="selfGal" class="gallery__content">
+                                <img src="./assets/gallery3.png" alt="img">
+                                <p>Self and Conference</p>
                             </div>
-                            <div class="gallery__content">
-                                <img src="./assets/galley4.png" alt="img">
+                            <div id="arthoGal" class="gallery__content">
+                                <img src="./assets/gallery4.png" alt="img">
+                                <p>Arthroscopy</p>
                             </div>
-                            <div class="gallery__content">
-                                <img src="./assets/galley5.png" alt="img">
+                            <div id="traumaGal" class="gallery__content">
+                                <img src="./assets/gallery5.png" alt="img">
+                                <p>Trauma</p>
                             </div>
-                            <div class="gallery__content">
-                                <img src="./assets/galley6.png" alt="img">
+                            <div id="pediatricGal" class="gallery__content">
+                                <img src="./assets/gallery6.png" alt="img">
+                                <p>Pediatric Ortho</p>
                             </div>
 
                         </div>
@@ -475,8 +481,23 @@
                 document.getElementById("menu-container").style.display = "none";
             }
 
-            document.getElementById("galleryBtn").onclick = function () {
-                location.href = "./gallery.html";
+            document.getElementById("jointGal").onclick = function () {
+                location.href = "/pages/jointGallery.html";
+            };
+            document.getElementById("footGal").onclick = function () {
+                location.href = "/pages/footGallery.html";
+            };
+            document.getElementById("selfGal").onclick = function () {
+                location.href = "/pages/selfGallery.html";
+            };
+            document.getElementById("arthoGal").onclick = function () {
+                location.href = "/pages/arthroscopyGallery.html";
+            };
+            document.getElementById("traumaGal").onclick = function () {
+                location.href = "/pages/traumaGallery.html";
+            };
+            document.getElementById("pediatricGal").onclick = function () {
+                location.href = "/pages/pediatricGallery.html";
             };
         </script>
     </body>
